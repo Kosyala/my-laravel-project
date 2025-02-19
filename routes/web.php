@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/about-me', function () {
+    return view('about-me');
+});
+
 Route::get('/submit-form', function () {
     return view('user_form');
 });
