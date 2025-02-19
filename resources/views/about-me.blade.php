@@ -4,10 +4,12 @@
     <title>About Me</title>
 </head>
 <body>
-    <h2>Isa Luzamindria Dado</h2>
+    @include("layouts.header")
+    <marquee><h1>Isa Luzamindria Dado</h1></marquee>
     <ul>
         <li>21</li>
         <li>she/her</li>
         <li>Transgender 🏳️‍⚧️</li>
     </ul>
+    @include("layouts.footer")
 </body>
