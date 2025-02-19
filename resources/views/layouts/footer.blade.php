@@ -1,2 +1,2 @@
 <?php
-echo "Content 2";
+echo "Content bottom";
