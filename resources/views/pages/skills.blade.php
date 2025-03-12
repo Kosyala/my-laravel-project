@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>About Me</title>
-</head>
-<body>
-    @include("layouts.header")
-    <marquee><h1>Isa Luzamindria Dado</h1></marquee>
+@extends('layouts.app')
+
+@section('content')
+    <h1>Welcome to My Portofolio</h1>
+
     <ul>
-        <li>21</li>
-        <li>she/her</li>
-        <li>Transgender 🏳️‍⚧️</li>
+        @foreach($skills as $row)
+            <li>{{$row->name}} - Description: {{$row->description}}</li>
+        @endforeach
     </ul>
-    @include("layouts.footer")
-</body>
+@endsection
